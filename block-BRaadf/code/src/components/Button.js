@@ -1,6 +1,10 @@
-import React from "react";
+import { useAuth } from "./UserContext";
 
-export default function SwitchButton({ isDarkMode, changeMode }) {
+
+export default function SwitchButton() {
+
+  const { isDarkMode, changeMode } = useAuth()
+
   return (
     <button
       className={`btn ${isDarkMode ? "btn-dark" : "btn-light"}`}

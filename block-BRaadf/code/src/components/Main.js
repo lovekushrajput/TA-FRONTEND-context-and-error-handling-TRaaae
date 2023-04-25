@@ -2,8 +2,10 @@ import Banner from "./Banner";
 import Cards from "./Cards";
 import Paragraph from "./Paragraph";
 import Title from "./Title";
+import { useAuth } from "./UserContext";
 
-function Main({ isDarkMode }) {
+function Main() {
+  const { isDarkMode} = useAuth()
   return (
     <>
       <Title text="Text Component" isDarkMode={isDarkMode} />
