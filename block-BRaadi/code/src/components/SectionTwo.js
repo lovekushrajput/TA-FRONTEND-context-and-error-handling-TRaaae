@@ -1,6 +1,8 @@
 import React from "react";
 
+
 class SectionTwo extends React.Component {
+
   handleClick = () => {
     throw new Error("An error occured!");
   };
